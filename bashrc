@@ -115,3 +115,5 @@ fi
 #so as not to be disturbed by Ctrl-S ctrl-Q in terminals:
 stty -ixon
 
+GIT_PROMPT_ONLY_IN_REPO=1
+source /home/kedde/dotfiles/tools/bash-git-prompt/gitprompt.sh
