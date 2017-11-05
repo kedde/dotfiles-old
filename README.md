@@ -11,7 +11,11 @@ this is my configurations files.
 ```
 cd ~
 git clone git@github.com:kedde/dotfiles.git
+cd dotfiles
 ./createSymLinks.sh
 ./installVimPlug.sh
 ```
+
+## in vim
+run :PlugInstall
 
