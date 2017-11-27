@@ -97,6 +97,7 @@ alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo
 # You may want to put all your additions into a separate file like
 # ~/.bash_aliases, instead of adding them here directly.
 # See /usr/share/doc/bash-doc/examples in the bash-doc package.
+. $HOME/.profile
 
 if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
@@ -115,5 +116,25 @@ fi
 #so as not to be disturbed by Ctrl-S ctrl-Q in terminals:
 stty -ixon
 
-GIT_PROMPT_ONLY_IN_REPO=1
-source /home/kedde/dotfiles/tools/bash-git-prompt/gitprompt.sh
+# GIT_PROMPT_ONLY_IN_REPO=1
+# source /home/kedde/dotfiles/tools/bash-git-prompt/gitprompt.sh
+export PATH=$PATH:$HOME/dotnet
+source /usr/lib/python2.7/site-packages/powerline/bindings/bash/powerline.sh
+
+
+# git aliases
+alias gst='git status'
+alias gl='git pull'
+alias gp='git push'
+alias gd='git diff | mate'
+alias gau='git add --update'
+alias gc='git commit -v'
+alias gca='git commit -v -a'
+alias gb='git branch'
+alias gba='git branch -a'
+alias gco='git checkout'
+alias gcob='git checkout -b'
+alias gcot='git checkout -t'
+alias gcotb='git checkout --track -b'
+alias glog='git log'
+alias glogp='git log --pretty=format:"%h %s" --graph'

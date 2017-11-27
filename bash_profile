@@ -1,4 +1,2 @@
 stty -ixon
 . ~/.bashrc
-
-
