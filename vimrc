@@ -28,6 +28,7 @@ Plug 'scrooloose/nerdcommenter'
 Plug 'xuyuanp/nerdtree-git-plugin'
 Plug 'tomasr/molokai'
 Plug 'christoomey/vim-tmux-navigator'
+Plug 'OmniSharp/omnisharp-vim'
 call plug#end()
 
 let mapleader = ','
@@ -92,6 +93,7 @@ map <C-k> <C-w>k
 map <C-l> <C-w>l
 
 " ctrlP
+let g:OmniSharp_selector_ui = 'ctrlp'  " Use ctrlp.vim
 nnoremap <Leader>o :CtrlP<CR>
 nnoremap <Leader>b :CtrlPBuffer<CR>
 nnoremap <Leader>f :CtrlPMRUFiles<CR> " Open most recently used files
